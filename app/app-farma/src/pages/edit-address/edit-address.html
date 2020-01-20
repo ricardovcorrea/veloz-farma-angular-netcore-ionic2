@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar color="azul">
+    <ion-title>
+      <img src='assets/images/logo.png' class='header-logo'>
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="closeModal()" color="white">
+        <span ion-text color="white" showWhen="ios" color="white">Cancel</span>
+        <ion-icon name="md-close" showWhen="android,windows" color="white"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+ <ion-content class="bg">
+<div class="div-margin">
+ <button ion-button block icon-left class="usar-loc btn-farma2" (click)="useMyLocation()">
+  <ion-icon name="locate"></ion-icon>
+  Usar minha localização
+</button>
+<ion-spinner [hidden]="!IsLoading"></ion-spinner>
+  <ion-list>
+  <ion-item>
+    <ion-label floating>CEP</ion-label>
+    <ion-input type="number" (input)="handleCepChanges($event.target.value)" [(ngModel)]="address.PostalCode"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Rua</ion-label>
+    <ion-input type="text" [(ngModel)]="address.Street"></ion-input>
+  </ion-item>
+  <ion-row>
+  <ion-item col-6>
+    <ion-label floating>Número</ion-label>
+    <ion-input type="number" [(ngModel)]="address.Number"></ion-input>
+  </ion-item>
+  <ion-item col-6>
+    <ion-label floating>Complemento</ion-label>
+    <ion-input type="text" [(ngModel)]="address.Complement"></ion-input>
+  </ion-item>
+    </ion-row>
+    <ion-item>
+    <ion-label floating>Bairro</ion-label>
+    <ion-input type="text" [(ngModel)]="address.Neighborhood"></ion-input>
+  </ion-item>
+  <ion-row>
+  <ion-item col-6>
+    <ion-label floating>Estado</ion-label>
+    <ion-input type="text" [(ngModel)]=address.State></ion-input>
+  </ion-item>
+  <ion-item col-6>
+    <ion-label floating>Cidade</ion-label>
+    <ion-input type="text" [(ngModel)]=address.City></ion-input>
+  </ion-item>
+    </ion-row>
+</ion-list>
+  </div>
+</ion-content>
+
+<ion-footer (click)="saveAndReturn()">
+    <span class="footer-button-text">Salvar Endereço</span>
+    <ion-icon name='arrow-forward' class="footer-button-icon"></ion-icon>
+</ion-footer>

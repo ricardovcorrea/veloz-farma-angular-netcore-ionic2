@@ -1,0 +1,33 @@
+<ion-content>
+  <ion-slides pager (ionSlideDidChange)="slideChanged()" (ionSlideDrag)="slideMoved()">
+    <ion-slide>
+      <div class="diag">
+        <!-- <ion-icon ios="ios-analytics" md="md-analytics" color="primary" [@bounce]='state' (@bounce.done)="animationDone()"></ion-icon> -->
+        <img src="assets/images/tut-1.svg" class="img-tut" [@bounce]='state' (@bounce.done)="animationDone()">
+      </div>
+      <div [@bounce]='state'>
+        <h2>Pronto! Seu pedido está feito</h2>
+        <p>Agora é só aguardar o seu pedido chegar, no conforto da sua casa, sem precisar ligar, Além de ter economizado na compra.</p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="diag">
+        <img src="assets/images/tut-1.svg" class="img-tut" [@bounce]='state' (@bounce.done)="animationDone()">
+      </div>
+      <div [@bounce]='state'>
+        <h2>set personal goals</h2>
+        <p>we're all in the gym for a reason: goals. set goals for diet and fitness.</p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="diag">
+        <img src="assets/images/tut-1.svg" class="img-tut" [@bounce]='state' (@bounce.done)="animationDone()">
+      </div>
+      <div [@bounce]='state'>
+        <h2>chat with others</h2>
+        <p>inspire and help each other reach fitness and diet goals.</p>
+      </div>
+    </ion-slide>
+  </ion-slides>
+  <button ion-button (click)="skip()" id="skip">{{ skipMsg }}</button>
+</ion-content>

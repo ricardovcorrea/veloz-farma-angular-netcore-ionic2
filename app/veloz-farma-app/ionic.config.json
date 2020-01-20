@@ -1,0 +1,8 @@
+{
+  "name": "veloz-farma",
+  "app_id": "ebfd12c5",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

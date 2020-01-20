@@ -1,0 +1,50 @@
+<nav class="navbar navbar-inverse fixed-top bg-azul-farma">
+  <a class="" href="#">
+    <img src="../assets/logo-white.png">
+  </a>
+  
+  <div class="btn-group pull-right" dropdown>
+  <button type="button" class="btn btn-danger">Farmacia Atual</button>
+  <button type="button" dropdownToggle class="btn btn-danger dropdown-toggle dropdown-toggle-split">
+  </button>
+  <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+    <li role="menuitem"><a class="dropdown-item" href="#">Farmacia 2</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Farmacia 3</a>
+    </li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Farmacia 4</a></li>
+    <li class="divider dropdown-divider"></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Adicionar Nova Farmacia</a>
+    </li>
+  </ul>
+</div>
+
+</nav>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-2 col-md-2 hidden-xs-down sidebar">
+      <ul class="nav">
+        <li class="nav-item">
+            <button class="btn btn-link" type="button" [routerLink]="['/public/home']">Home</button>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-link" type="button" [routerLink]="['/store/dashboard']">Dashboard</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link" type="button" [routerLink]="['/store/configuration']">Configurações</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link" type="button" (click)="logout()">Sair</button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="col-sm-10 col-md-10 pt-3 bg-light-farma">
+
+      <router-outlet></router-outlet>
+
+    </main>
+
+  </div>
+</div>

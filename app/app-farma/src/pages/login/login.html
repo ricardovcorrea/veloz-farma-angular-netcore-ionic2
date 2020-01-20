@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="azul">
+    <ion-title>
+      <img src='assets/images/logo.png' class='header-logo'>
+    </ion-title>
+  </ion-navbar >
+</ion-header>
+
+ <ion-content class="bg">
+<div class="div-margin">
+ <button ion-button block icon-left class="usar-loc btn-fb" (click)="doFbLogin()">
+  <ion-icon name="logo-facebook"></ion-icon>
+  Logar com Facebook
+</button>
+<ion-spinner [hidden]="!IsLoading"></ion-spinner>
+  <ion-list class="ion-list">
+  <ion-item>
+    <ion-label floating>Email</ion-label>
+    <ion-input type="text" [(ngModel)]="Credentials.Email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Senha</ion-label>
+    <ion-input type="password" [(ngModel)]="Credentials.Password"></ion-input>
+  </ion-item>
+  
+
+
+<button ion-button block icon-left class="mar-tb2 btn-farma" (click)="login()">
+  <ion-icon name="mail"></ion-icon>
+  Entrar com email
+</button>
+
+<button ion-button block clear class="btn-remember" (click)="forgetPassword()">
+  Esqueci minha senha
+</button>
+
+</ion-list>
+
+<button ion-button small block color="dark" clear text-center class="mar-tb2 btn-cad" (click)="singUp()">
+  <span class="muted-text">Não tem cadastro?&nbsp;</span> Cadastre-se
+</button>
+
+ 
+  </div>
+</ion-content>

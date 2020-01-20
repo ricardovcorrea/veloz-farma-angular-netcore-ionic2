@@ -1,0 +1,23 @@
+.home-search-bar-body {
+  height: 10vh;
+  padding: 7px 15px 7px 15px;
+  background-color: $bg-color;
+}
+
+.home-search-bar-body .searchBox {
+  background-color: white;
+  color: #aeaeae;
+  height: 40px;
+  border-radius: 500px;
+  border: 1px solid #d7dadd;
+  box-shadow: 0 0px 10px rgba(23, 47, 76, 0.15);
+  padding: 8px 0 8px 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.home-search-bar-body .icon {
+  margin-right: 2px;
+}
+
+.home-search-bar-body .placeholderText {}

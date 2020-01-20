@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C6BFDE6-9FFE-49D5-9501-F9A6533E6ABC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IhChegou.DI</RootNamespace>
+    <AssemblyName>IhChegou.DI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SimpleInjector, Version=4.0.11.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.4.0.11\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConteinerExtension.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IhChegou.Cache.Contract\IhChegou.Cache.Contract.csproj">
+      <Project>{870c0100-95d4-42bc-bced-ed45077c98db}</Project>
+      <Name>IhChegou.Cache.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhChegou.Cache\IhChegou.Cache.csproj">
+      <Project>{2ec9fe15-f476-47ce-8d01-0bf2deb0b26a}</Project>
+      <Name>IhChegou.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhChegou.Domain.Contract\IhChegou.Domain.Contract.csproj">
+      <Project>{CD1C537F-00F7-4C62-9E9E-8B62E8DB0491}</Project>
+      <Name>IhChegou.Domain.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhChegou.Domain.Pharma\IhChegou.Domain.Pharma.csproj">
+      <Project>{DF68AAB3-6857-4EE0-B88C-4E9094DF4E15}</Project>
+      <Name>IhChegou.Domain.Pharma</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhChegou.Repository.Contract\IhChegou.Repository.Contract.csproj">
+      <Project>{AAE0405A-2554-4303-94ED-A18900D36232}</Project>
+      <Name>IhChegou.Repository.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhChegou.Repository.Pharma\IhChegou.Repository.Pharma.csproj">
+      <Project>{8fac9511-2658-43ef-ac40-5dfd07614380}</Project>
+      <Name>IhChegou.Repository.Pharma</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhChegou.Repository.Session\IhChegou.Repository.Session.csproj">
+      <Project>{445e636b-853d-4aa5-85fa-ffd8e98afb9e}</Project>
+      <Name>IhChegou.Repository.Session</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhChegou.Tools.Contract\IhChegou.Tools.Contract.csproj">
+      <Project>{f1caa736-f692-4f86-885e-ca1983bf9e1d}</Project>
+      <Name>IhChegou.Tools.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhChegou.Tools\IhChegou.Tools.csproj">
+      <Project>{ac313a7f-eb5f-4184-8545-297c75807541}</Project>
+      <Name>IhChegou.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

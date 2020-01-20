@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar color="azul">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img src='assets/images/logo.png' class='header-logo'></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg">
+<ion-list>
+  <button class="item" ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+    {{ item }}
+  </button>  
+</ion-list>
+</ion-content>

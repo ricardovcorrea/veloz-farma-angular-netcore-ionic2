@@ -1,0 +1,31 @@
+.address-bar-body {
+  height: 9vh;
+  position: relative;
+  padding: 1em 1em;
+  background-color: $bg-color;
+}
+
+.address-bar-body .mainText {
+  color: #002B4C;
+  font-weight: 700;
+  font-size: 1em;
+  margin: 0 0 2px 0;
+}
+
+.address-bar-body .addressText {
+  color: #002B4C;
+}
+
+.address-bar-body .changeAddressButton {
+  background: transparent;
+  color: $amarelo;
+  text-transform: uppercase;
+  position: absolute;
+  top: 1.2em;
+  right: 1em;
+  height: 28px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}

@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar color="header" mode="ios">
+         <ion-title><img src='assets/images/logo.png' class='header-logo'></ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="bg">
+    <address-bar>
+    </address-bar>
+    <home-search-bar>
+    </home-search-bar>
+    <category-list>
+    </category-list>
+    <product-list [loading]="productListIsLoading" [products]="homeSearchResult.Result">
+    </product-list>
+</ion-content>
+
+<order-fab>
+</order-fab>

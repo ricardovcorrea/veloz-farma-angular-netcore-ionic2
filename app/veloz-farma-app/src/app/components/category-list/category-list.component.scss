@@ -1,0 +1,33 @@
+.category-list-body {
+  height: 14vh;
+  padding: 0em 1em;
+  text-align: center;
+  background-color: $bg-color;
+}
+
+.category-list-body .category {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #adb4bb;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.category-list-body .category:last-child {
+  margin-right: 0px;
+}
+
+.category-list-body .category .icon {}
+
+.category-list-body .category .name {
+  position: absolute;
+  left: -7px;
+  bottom: -15px;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  width: 70px;
+  color: #ACB5BD;
+}

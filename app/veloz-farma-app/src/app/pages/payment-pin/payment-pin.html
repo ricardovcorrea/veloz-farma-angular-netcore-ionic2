@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="header" mode="ios">
+    <button ion-button class="modal-close-button" icon-only (click)="closeModal()">
+      <ion-icon name='close'></ion-icon>
+    </button>
+    <ion-title><img src='assets/images/logo.png' class='header-logo'></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="bg">
+
+  <ion-card>
+    <ion-list>
+      <ion-item>
+        <ion-label>Gaming</ion-label>
+        <ion-select [(ngModel)]="gaming">
+          <ion-option value="nes"><img src='assets/images/logo.png'>TeNES</ion-option>
+          <ion-option value="n64">Nintendo64</ion-option>
+          <ion-option value="ps">PlayStation</ion-option>
+          <ion-option value="genesis">Sega Genesis</ion-option>
+          <ion-option value="saturn">Sega Saturn</ion-option>
+          <ion-option value="snes">SNES</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+</ion-content>

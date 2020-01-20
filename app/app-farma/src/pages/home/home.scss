@@ -1,0 +1,75 @@
+page-home {
+  ion-toolbar {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  ion-toolbar ion-list {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+  }
+  ion-toolbar .list-ios,
+  ion-toolbar .list-ios > .item-block:last-child,
+  ion-toolbar .list {
+    margin: 0;
+    border-top: 0!important;
+  }
+  .header-ios .toolbar-ios:last-child .toolbar-background-ios {
+    border-width: 0;
+  }
+  ion-toolbar ion-list ion-item {
+    background-color: $bg-color!important;
+  }
+  .span-busca {
+    background: #bd0000;
+    padding: 1em;
+    display: block;
+    border-radius: 40px;
+    margin-bottom: 1em;
+    border: 1px solid #00ffff;
+    color: #fff;
+  }
+  .div-margin {
+    margin-top: 8px!important;
+  }
+  .home-search-bar-body {
+    height: 10vh;
+    padding: 7px 5px 7px 5px;
+    background-color: $bg-color;
+  }
+  .btn-troca {
+    padding-right: 0!important;
+    margin-right: 0!important;
+    line-height: 1.4em;
+    text-transform: uppercase;
+  }
+  .item-ios .btn-troca  {
+    height: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .item-end p {
+    font-size: 0.9em;
+    color: $azul;
+    font-weight: bold;
+  }
+  .item-end p span {
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+  .home-search-bar-body .searchBox {
+    background-color: white;
+    color: #aeaeae;
+    height: 40px;
+    border-radius: 500px;
+    border: 1px solid #d7dadd;
+    box-shadow: 0 0px 10px rgba(23, 47, 76, 0.15);
+    padding: 8px 0 8px 20px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .home-search-bar-body .icon {
+    margin-right: 2px;
+  }
+}

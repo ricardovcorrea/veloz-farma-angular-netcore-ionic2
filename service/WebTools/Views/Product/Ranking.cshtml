@@ -1,0 +1,96 @@
+﻿
+
+<script>
+    function search_() {
+        console.log("Mimimi");
+        window.location = '/Product/Ranking?query=' + $('#search').val();
+    }
+</script>
+
+
+@{
+    ViewBag.Title = "Raking";
+}
+
+<h2>Ranking</h2>
+
+@model List<IhChegou.DTO.Product.DtoProduct>
+
+@{
+    ViewBag.Title = "List";
+    int index = 0;
+}
+
+
+
+@using (Html.BeginForm("Ranking", "Product", FormMethod.Get, new { enctype = "multipart/form-data" }))
+{
+    <label>Buscar por:</label>
+    <input type="text" id="search" />
+    <input type="button" value="BUSCAR (NÃO APERTE O ENTER)" onclick="search_()" />
+}
+
+<br />
+<br />
+<br />
+@Html.ActionLink("Proxima Pagina", "Ranking", new { Page = ViewBag.Page + 1 })
+<style>
+    input.cbox {
+        height: 100px;
+        width: 100px;
+    }
+</style>
+
+
+
+@Html.AntiForgeryToken()
+
+
+<table class="table">
+
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @using (Html.BeginForm("UpdateView", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        <input type="hidden" value="@item.Id" name="Id" />
+                        <div class="form-horizontal">
+                            <input type="number" name=Views value="@item.Views" />
+                            <input type="submit" value="Atualizar" class="btn btn-sm btn-success" />
+                        </div>
+                    }
+                </td>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @foreach (var sku in item.Skus)
+                    {
+                        if (sku.Image == null)
+                        {
+                            <p>@sku.Name <a href="/Sku/Edit/@sku.Id">Colocar Imagem</a></p>
+                        }
+                        else
+                        {
+                            <p>@sku.Name <img src="@sku.Image" alt="@sku.Name" height="50" /></p>
+                            <br />
+                        }
+                    }
+                </td>
+            </tr>
+        }
+    }
+</table>
+@Html.ActionLink("Proxima Pagina", "Ranking", new { Page = ViewBag.Page + 1 })
+
+
+
+
+
+
+
+
+

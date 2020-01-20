@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar color="header" mode="ios">
+    <button ion-button class="modal-close-button" icon-only>
+      <ion-icon name="arrow-round-back" class="search-back-button"></ion-icon>
+    </button>
+    <ion-title><img src='assets/images/logo.png' class='header-logo'></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg">
+
+  <ion-card class="product-list-item product-list-item-top">
+    <ion-item class="product-content">
+      <ion-icon name="list-box" ios="ios-list-box-outline"></ion-icon>
+      <span class="titulo-card">Pedido 12343 (29/02/2017 - 20:30h)</span>
+    </ion-item>
+  </ion-card>
+
+
+  <ion-card class="product-list-item">
+    <ion-item class="product-content">
+      <ion-avatar item-left class="image">
+        <img src="../../../assets/images/location-header.png">
+      </ion-avatar>
+      <h2 class="name">Dorflex emcartela com 10 comprimidos - 40mg</h2>
+      <h3 class="manufacturer">R$ 5,99</h3>
+    </ion-item>
+    <div class="qnt-carrinho" icon-center item-right>
+      <span class="qnt">2</span>
+    </div>
+  </ion-card>
+  <ion-card class="product-list-item">
+    <ion-item class="product-content">
+      <ion-avatar item-left class="image">
+        <img src="../../../assets/images/location-header.png">
+      </ion-avatar>
+      <h2 class="name">Dorflex emcartela com 10 comprimidos - 40mg</h2>
+      <h3 class="manufacturer">R$ 5,99</h3>
+    </ion-item>
+    <div class="qnt-carrinho" icon-center item-right>
+      <span class="qnt">1</span>
+    </div>
+  </ion-card>
+  <ion-card class="product-list-item">
+    <ion-item class="product-content">
+      <ion-avatar item-left class="image">
+        <img src="../../../assets/images/location-header.png">
+      </ion-avatar>
+      <h2 class="name">Dorflex emcartela com 10 comprimidos - 40mg</h2>
+      <h3 class="manufacturer">R$ 5,99</h3>
+    </ion-item>
+    <div class="qnt-carrinho" icon-center item-right>
+      <span class="qnt">3</span>
+    </div>
+  </ion-card>
+  <ion-card class="product-list-item product-list-item-values">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <h3 class="subtotal">Sub-total</h3>
+          <h3 class="frete">Frete</h3>
+          <h2 class="total">Total</h2>
+        </ion-col>
+        <ion-col col-6 class="right">
+          <h3 class="subtotal">R$ 12,00</h3>
+          <h3 class="frete">R$ 2,00</h3>
+          <h2 class="total">R$ 14,00</h2>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+
+  <ion-card class="product-list-item product-list-item-top">
+    <ion-item class="product-content">
+      <ion-icon name="list-box" ios="ios-list-box-outline"></ion-icon>
+      <span class="titulo-card">Avaliação do pedido</span>
+    </ion-item>
+  </ion-card>
+
+
+  <ion-card class="product-list-item">
+    <ion-item class="product-content">
+      <p>Seu pedido chegou dentro do tempo estimado?
+        <br />
+        <span>Tempo estimado do pedido: 60 - 75min</span></p>
+    </ion-item>
+  </ion-card>
+
+
+
+</ion-content>
+
+
+
+<ion-footer class='footer-button'>
+  <ion-toolbar color='header' class="footer-button verde" (click)="findBudgets()">
+    <span class="footer-button-text">Enviar avaliação</span>
+    <ion-icon name='arrow-forward' class="footer-button-icon"></ion-icon>
+  </ion-toolbar>
+</ion-footer>

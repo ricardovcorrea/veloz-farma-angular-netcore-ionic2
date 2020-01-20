@@ -1,0 +1,22 @@
+<div class="product-list-body">
+    <ion-spinner class="loading-spinner" *ngIf="loading"></ion-spinner>
+    <div *ngIf="!loading">
+        <ion-card *ngFor="let product of products" class="product-list-item">
+        <ion-item class="product-content">
+            <ion-avatar item-left class="image">
+                <img [src]="product.Image || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7cwX319PqCER5Trs0wwE7wzM_inZ-yv1Ay2tIcfUKgQ09Dkin1Q'">
+            </ion-avatar>
+            <h2 class="name">{{product.SkuName}}</h2>
+            <h3 class="manufacturer">{{product.Producer}}</h3>
+        </ion-item>
+        <!--<button class="add-to-cart-button" ion-button icon-center item-right (click)="addToCart(product)">
+                <ion-icon name="cart" class="icon"></ion-icon>
+          </button>-->
+        <div class="qnt-carrinho" icon-center item-right>
+        <ion-icon name="add" class="block icon-qnt icon-plus" (click)="addToCart(product)"></ion-icon>
+        <span class="qnt">1</span>
+        <ion-icon name="remove" class="block icon-qnt icon-remove"></ion-icon>
+        </div>
+    </ion-card>
+    </div>
+</div>

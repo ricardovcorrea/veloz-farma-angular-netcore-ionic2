@@ -1,0 +1,44 @@
+.budget-list-body .name {
+  font-size: 1em;
+  font-weight: bold;
+  color: $cinza;
+}
+
+.budget-list-body .time {
+  font-size: .8em;
+  color: #ccc;
+}
+
+.budget-list-body .manufacturer {
+  font-size: .9em;
+  color: $amarelo;
+  display: inline-block;
+}
+.budget-list-body ion-badge {
+  background: $verde;
+  margin-left: 20px;
+}
+
+.budget-list-body .qnt-itens {
+  font-size: 0.9em;
+  color: $cinza;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.budget-list-body .complete {
+  font-size: 1em;
+  font-weight: bold;
+  color: $verde;
+  padding: 1em 10px 0 0;
+  text-align: right;
+}
+
+.budget-list-body .incomplete {
+  color: $bad;
+}
+
+.budget-list-body .qnt-carrinho {
+      align-items: flex-end;
+}
+

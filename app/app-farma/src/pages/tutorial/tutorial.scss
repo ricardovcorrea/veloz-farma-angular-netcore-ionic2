@@ -1,0 +1,56 @@
+page-tutorial .diag {
+    position:absolute;
+    z-index:1;
+    width:100%;
+    top: 0;
+    height: 66%;
+  background-image: url("../assets/images/whitebg.svg");
+  background-repeat: no-repeat;
+}
+page-tutorial ion-slide {
+  background: #e9ecee;
+}
+page-tutorial .img-tut {
+    padding: 20%;
+}
+
+page-tutorial ion-icon {
+    margin-top:40%;
+    font-size:7em;
+}
+
+page-tutorial h2 {
+    margin-top:80% !important;
+    font-weight:bold;
+    font-size:1em;
+    color: $azul;
+}
+
+page-tutorial p {
+    width:80%;
+    display:block;
+    margin: 0 auto;
+    font-size:.8em;
+  color: #868d93;
+}
+
+page-tutorial .swiper-pagination-bullet-active {
+    background:$amarelo;
+}
+
+page-tutorial .swiper-pagination {
+    bottom: 12% !important;
+}
+
+page-tutorial #skip {
+    position:absolute;
+    bottom: 20px;
+    width:100%;
+    background: none !important;
+    text-align: center;
+    cursor: pointer;
+    z-index: 5;
+    color:$amarelo;
+    border: none;
+    box-shadow: none;
+}

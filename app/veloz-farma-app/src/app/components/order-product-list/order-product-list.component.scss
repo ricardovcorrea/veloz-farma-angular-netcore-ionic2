@@ -1,0 +1,39 @@
+.order-product-list-body {
+
+    .quantity-controls{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+
+        .add-button {
+            color: #009544; 
+            padding:5px;
+        }   
+
+        .remove-button {
+            color: #FF2C2C;
+            padding:5px;
+        }
+
+        .quantity-value
+        {
+            display: inline-block;
+            min-width: 18px;
+        }
+    }
+    
+    .empty-list-placeholder
+    {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .icon
+        {
+            font-size: 200px;
+        }
+    }
+
+    .manufacturer {}
+    .name {}
+    .image {}
+}

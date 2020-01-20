@@ -1,0 +1,13 @@
+page-categories {
+  ion-list .item {
+    border-bottom: $border-b-farma!important;
+    line-height: 2.2em;
+    color: $azul;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  
+  .item-inner {
+    border-bottom: 0!important;
+  }
+}

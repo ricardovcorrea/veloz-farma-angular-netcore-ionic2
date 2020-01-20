@@ -1,0 +1,56 @@
+.budget-list-body .name {
+  font-size: 1em;
+  font-weight: bold;
+  color: $cinza;
+}
+
+.budget-list-body .time {
+  font-size: .8em;
+  color: #ccc;
+}
+
+.product-list-item {
+  box-shadow: $sombra;
+  border: $border-b-farma;
+}
+.product-content {
+padding-left: 8px;  
+}
+
+ion-avatar.image {
+margin-right: 8px!important;  
+}
+
+.budget-list-body .manufacturer {
+  font-size: .9em;
+  color: $amarelo;
+  display: inline-block;
+}
+.budget-list-body ion-badge {
+  background: $verde;
+  margin-left: 20px;
+}
+
+.budget-list-body .qnt-itens {
+  font-size: 0.8em;
+  color: $cinza;
+  text-align: right;
+}
+
+.budget-list-body .complete {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #1b944b;
+    padding: 1.7em 0px 0 0;
+    text-align: right;
+}
+
+.budget-list-body .incomplete {
+  color: $bad;
+}
+
+.budget-list-body .qnt-carrinho {
+      align-items: flex-end;
+  margin-right: 0;
+}
+

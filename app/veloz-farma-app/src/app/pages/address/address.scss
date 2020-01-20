@@ -1,0 +1,46 @@
+.toolbar-md-header .toolbar-title-md,
+.toolbar-md-header .bar-button-default-md,
+.no-cep {
+  color: $amarelo;
+}
+
+.pad-lat30 {
+  margin: 0 2em;
+}
+
+.form-address ion-item {
+  padding-left: 0;
+  background: transparent;
+}
+
+.last-item {
+  margin-bottom: 2em;
+}
+
+.footer-button {
+  height: 70px;
+  text-align: center;
+}
+
+.footer-button-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.footer-button-icon {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 24px;
+}
+
+ion-input {
+  color: $amarelo;
+}
+
+.verde .toolbar-background {
+  background: $verde;
+}

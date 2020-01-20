@@ -1,0 +1,36 @@
+﻿@model IhChegou.DTO.Search.DtoSearchResult
+
+@{
+    ViewBag.Title = "Buscar sku";
+}
+
+<h2>Buscar sku</h2>
+
+@using (Html.BeginForm("Search", "Sku"))
+{
+    <input type="search" name="query" />
+    <input type="submit" />
+}
+
+<table class="table">
+    @if (Model != null)
+    {
+        foreach (var item in Model.Result)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Product)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SkuName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Producer)
+                </td>
+                <td>
+                    @Html.ActionLink("Atualizar", "Edit", new { Id = item.SkuId }, new { target = "blank" })
+                </td>
+            </tr>
+        }
+    }
+</table>

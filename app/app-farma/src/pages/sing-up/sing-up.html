@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar color="azul">
+    <ion-title>
+      <img src='assets/images/logo.png' class='header-logo'>
+    </ion-title>
+  </ion-navbar >
+</ion-header>
+
+ <ion-content class="bg">
+<div class="div-margin">
+  
+  <ion-spinner [hidden]="!IsLoading"></ion-spinner>
+  
+  <ion-list class="ion-list">
+  <ion-item>
+    <ion-label floating>Email</ion-label>
+    <ion-input type="text" [(ngModel)]="Client.Email"></ion-input>
+  </ion-item>
+    <ion-item>
+    <ion-label floating>Nome</ion-label>
+    <ion-input type="text" [(ngModel)]="Client.Name"></ion-input>
+  </ion-item>
+    <ion-item>
+    <ion-label floating>CPF</ion-label>
+    <ion-input type="number" [(ngModel)]="Client.Document"></ion-input>
+  </ion-item>
+    <ion-item>
+    <ion-label floating>Senha</ion-label>
+    <ion-input type="password" [(ngModel)]="Client.Password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Confirmar senha</ion-label>
+    <ion-input type="password" [(ngModel)]="PasswordConfirmation"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+
+ 
+  </div>
+</ion-content>
+
+<ion-footer (click)="singUp()">
+    <span class="footer-button-text">Fazer cadastro</span>
+    <ion-icon name='arrow-forward' class="footer-button-icon"></ion-icon>
+</ion-footer>

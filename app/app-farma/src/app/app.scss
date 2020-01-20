@@ -1,0 +1,179 @@
+$colorLight: #EAEDEF;
+$azul: #091f51;
+$amarelo: #e0a53b;
+$cinza: #393939;
+$cinzaClaro: #868d93;
+$verde: #1b944b;
+$bad: #bd0000;
+$bg-color: #f9f9fb;
+$sombra: 0 2px 8px rgba(23, 47, 76, 0.14);
+$border-color: #e8ecf1;
+$border-b-farma: 1px solid #e8ecf1;
+$white: #ffffff;
+* {
+  //color: $azul;
+}
+
+.div-margin {
+  margin: 6% 3% 0 3%!important;
+}
+
+.header-logo {
+  width: 130px;
+  height: auto;
+}
+
+.bg {
+  background: $bg-color;
+}
+
+ion-list {
+  border: 1px solid #d7dadd;
+  //border-radius: 0.6em;
+  box-shadow: $sombra;
+}
+
+.ion-list {
+  padding-left: 1em!important;
+  padding-right: 1em!important;
+  background: #fff;
+  padding-bottom: 1em;
+}
+
+.ion-list ion-item {
+  padding-left: 0
+}
+
+.mar-tb2 {
+  margin: 2em 0;
+}
+
+.btn-farma {
+  background: $azul;
+  color: $amarelo;
+}
+.btn-farma2 {
+  background: $amarelo;
+  color: #fff;
+  font-weight: bold;
+}
+
+ion-footer {
+  background: $verde;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: center;
+}
+
+.footer-button-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.footer-button-icon {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+}
+
+ion-spinner {
+  display: block;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: 0.8em;
+  color: $cinzaClaro;
+}
+
+.not-danger {
+  background: rgba(255, 0, 0, 0.61);
+  margin-top: 1em;
+  padding-left: 1em!important;
+  font-size: 0.8em;
+  color: $white;
+  border-radius: 0.3em;
+}
+
+.not-danger .item-inner {
+  margin-left: 0px;
+}
+cart-button button {
+  background-color: transparent!important;
+  box-shadow: none!important;
+}
+ion-header .cart-header {
+  margin-right: 10px;
+}
+
+ion-badge.badge-cart {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-size: 0.75em;
+  padding: 4px 6px;
+  border-radius: 50%!important;
+  background-color: #f7a547!important;
+  color: $azul!important;
+}
+
+ion-header::after {
+  display: none;
+}
+
+.side-menu .menu-inner {
+  background: $azul;
+  background-image: url(../assets/images/bg-menu.jpg);
+  background-size: cover;
+}
+
+.side-menu ion-content,
+.side-menu button,
+.side-menu .toolbar-background {
+  background: transparent;
+}
+
+.side-menu ion-list {
+  border: 0;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+}
+
+.side-menu button {
+  color: $amarelo;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.side-menu ion-title .toolbar-title {
+  color: $amarelo!important;
+}
+
+.side-menu button .item-inner {
+  border-bottom: none!important;
+  margin-left: 5px!important;
+}
+
+.side-menu button ion-icon {
+  opacity: 0.6;
+}
+
+.btn-remember span {
+    font-size: 0.9em;
+    color: $cinzaClaro!important;
+}
+.color-amarelo span {
+  color: $amarelo!important;
+  font-weight: bold;
+}
+.header .toolbar .toolbar-content .title {
+align-items: flex-end;
+}
+.header-modal .toolbar .toolbar-content .title {
+align-items: center;
+}

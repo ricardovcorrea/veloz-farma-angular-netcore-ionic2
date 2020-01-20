@@ -1,0 +1,52 @@
+ion-toolbar {
+    position: relative;
+}
+
+.search-bar-body {
+    padding: 2px 2px 2px 2px;
+}
+
+.search-bar-body .searchBox {
+    background-color: white;
+    color: #cccccc;
+    height: 45px;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.search-bar-body .search-input {
+    border: 0px;
+    height: 45px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 55px;
+    font-size: 20px;
+    color: black;
+}
+
+.search-bar-body .search-clear-button {
+    margin-right: 5px;
+    font-size: 28px;
+    color: #002B4C;
+    position: absolute;
+    z-index: 100;
+    top: 8px;
+    right: 15px;
+}
+
+.search-bar-body .search-back-button {
+    margin-right: 5px;
+    font-size: 28px;
+    color: #002B4C;
+    position: absolute;
+    z-index: 100;
+    top: 3px;
+    left: 10px;
+    padding:5px;
+}
+
+.home-search-bar-body .placeholderText {}

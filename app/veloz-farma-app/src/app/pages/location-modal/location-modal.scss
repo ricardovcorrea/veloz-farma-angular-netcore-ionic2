@@ -1,0 +1,74 @@
+.location-option-list-body {
+  height: 92vh;
+  padding: 60px 20px 7px 20px;
+  background-color: #f9f9fb;
+}
+
+.location-option-list-body .option-list-header {
+  height: 23vh;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding-top: 30px;
+  text-align: center;
+  background-image: url('../assets/images/location-header.png');
+  background-size: cover;
+}
+
+.location-option-list-body .option-list-header .title {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.location-option-list-body .subtitle {
+  padding: 20px 10px 20px 10px;
+  background-color: #ffffff;
+  color: #868d93;
+  border-top: 0px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 0px;
+  border-color: #d7dadd;
+  border-style: solid;
+}
+
+.location-option-list-body .option {
+  background-color: #ffffff;
+  color: #868d93;
+  border-top: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 0px;
+  border-color: #d7dadd;
+  border-style: solid;
+  height: 70px;
+  cursor: pointer;
+}
+
+.location-option-list-body .option .icon {
+  color: #F1A63C;
+  font-size: 30px;
+  margin-left: 15px;
+  margin-top: 18px;
+  margin-right: 15px;
+}
+
+.location-option-list-body .option .text {
+  color: #172f4c;
+  font-size: 20px;
+}
+
+.location-option-list-body .location {}
+
+.location-option-list-body .address {}
+
+.location-option-list-body .login {
+  border: 1px #d7dadd solid;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.location-option-list-body .box-location {
+  border-radius: 15px;
+  box-shadow: $sombra;
+}

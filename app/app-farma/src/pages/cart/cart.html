@@ -1,0 +1,22 @@
+<ion-header class="header-modal">
+  <ion-navbar color="azul">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img src='assets/images/logo.png' class='header-logo'></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg">
+  <div class="div-margin">
+    <cart-product-list [Skus]="cart.SkusRequesteds" [IsLoading]="IsLoading"></cart-product-list>
+    <button ion-button block clear class="btn-remember color-amarelo" (click)="addMoreProducts()">
+      Adicionar mais itens
+    </button>
+  </div>
+</ion-content>
+
+<ion-footer (click)="findBudgets()">
+  <span class="footer-button-text">Pedir orçamentos</span>
+  <ion-icon name='arrow-forward' class="footer-button-icon"></ion-icon>
+</ion-footer>

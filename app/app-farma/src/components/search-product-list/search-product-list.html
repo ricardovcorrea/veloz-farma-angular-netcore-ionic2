@@ -1,0 +1,11 @@
+<ion-spinner [hidden]="!IsLoading"></ion-spinner>
+<ion-list class="list-product">
+  <button ion-item class="card-product" *ngFor="let product of Products" (click)="openProductDetail(product)">
+    <ion-avatar item-start>
+      <img src="{{product.Image ? product.Image : 'assets/images/place-imagem.jpg'}}">
+    </ion-avatar>
+    <h2 text-wrap>{{product.SkuName}}</h2>
+    <p>A partir de: R$ 5,99</p>
+    <button class="btn-cart" ion-button item-end (click)="addProductToCart(product)"><ion-icon name="cart"></ion-icon></button>
+  </button>
+</ion-list>

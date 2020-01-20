@@ -1,0 +1,23 @@
+<div class="order-product-list-body">
+  <ion-spinner class="loading-spinner" *ngIf="isLoading"></ion-spinner>
+  <div *ngIf="products && products.length > 0" class="product-list">
+    <ion-card *ngFor="let orderProduct of products">
+      <ion-item>
+        <ion-avatar item-left class="image">
+          <img [src]="orderProduct.Image || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7cwX319PqCER5Trs0wwE7wzM_inZ-yv1Ay2tIcfUKgQ09Dkin1Q'">
+        </ion-avatar>
+        <h2 class="name">{{orderProduct.Name}}</h2>
+        <h3 class="manufacturer">{{orderProduct.ProductReference.Producer.Name}}</h3>
+      </ion-item>
+      <div class="qnt-carrinho" icon-center item-right>
+        <ion-icon name="add" class="block icon-qnt icon-plus" (click)="addToCart(product)"></ion-icon>
+        <span class="qnt">1</span>
+        <ion-icon name="remove" class="block icon-qnt icon-remove"></ion-icon>
+      </div>
+    </ion-card>
+
+  </div>
+  <div *ngIf="!products || products.length === 0" class="empty-list-placeholder">
+    <ion-icon name="ios-cart-outline" class="icon"></ion-icon>
+  </div>
+</div>

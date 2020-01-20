@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar color="header">
+        <div class="search-bar-body">
+            <div class="searchBox">
+                <ion-icon name="arrow-round-back" class="search-back-button" (click)="closeModal()"></ion-icon>
+                <input autofocus (ngModelChange)="doSearch($event)" [(ngModel)]="searchQuery.Query" type="text" class="search-input" placeholder="Buscar" />
+                <ion-icon name="close" [hidden]="!searchQuery.Query" class="search-clear-button" (click)="clear()"></ion-icon>
+            </div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="bg">
+    <product-list [products]=searchResult.Result>
+    </product-list>
+</ion-content>
+
+<order-fab>
+</order-fab>

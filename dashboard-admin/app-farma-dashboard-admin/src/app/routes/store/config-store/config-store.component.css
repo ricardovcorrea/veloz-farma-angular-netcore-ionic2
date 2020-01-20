@@ -1,0 +1,24 @@
+.row-teste {
+background: #fff;
+    padding-bottom: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.mlat20 {
+  margin: 0 20px;
+}
+.mvert20 {
+  margin: 20px 0;
+}
+.label-dias {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.center-vertical {
+    display: flex;
+    align-items: center;
+}
+.modal-header {
+  display: block;
+}

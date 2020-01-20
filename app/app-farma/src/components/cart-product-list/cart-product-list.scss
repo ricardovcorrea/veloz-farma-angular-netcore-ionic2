@@ -1,0 +1,48 @@
+cart-product-list {
+    .list-cart {
+        border: 0;
+        box-shadow: 0 0 0 rgba(23, 47, 76, 0);
+      }
+      .qnt-cart {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        button {
+          border-radius: 50%;
+          color: #b4b4b4;
+          background: #f7f7f7;
+          border: 0;
+          box-shadow: 0 0 0 transparent;
+        }
+        .valor-qnt {
+          color: $amarelo;
+          font-weight: bold;
+        }
+      }
+      .card-product {
+        border: 1px solid #d7dadd;
+        box-shadow: $sombra;
+        margin-bottom: 0.5em;
+        .item-inner {
+          border-bottom: none!important;
+        }
+      }
+      .list-cart {
+        h2 {
+          font-size: 0.9em;
+          font-weight: bold;
+          color: $cinza;
+          height: 2.5em;
+          overflow: hidden!important;
+        }
+        p {
+          font-size: 0.8em;
+          color: $amarelo;
+        }
+        ion-avatar img {
+          border-radius: 0!important;
+          width: 54px;
+          height: 54px;
+        }
+      }
+}

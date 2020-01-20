@@ -1,0 +1,7 @@
+<div class="address-bar-body">
+  <p class="mainText">Buscaremos os melhores preços em:</p>
+  <span [hidden]="!limitSize" class="addressText">{{addressString | limitTextSize : 40}}</span>
+  <span [hidden]="limitSize" class="addressText">{{addressString}}</span>
+  <button [hidden]="!limitSize" class="changeAddressButton" (click)="changeLocation()">Trocar de
+    <br />Endereço</button>
+</div>

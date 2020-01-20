@@ -1,0 +1,47 @@
+.mb20 {
+  margin-bottom: 20px;
+}
+.row-teste {
+background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.panel {
+    margin-bottom: 21px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.widget {
+    margin-bottom: 20px;
+    border: 0;
+}
+.widget.panel, .widget .panel {
+    overflow: hidden;
+}
+.btn-farma {
+    color: #e0a53b;
+    background-color: #1b2d3c;
+  border-color: #1b2d3c;
+}
+.btn-farma:hover, .btn-farma:active  {
+    color: #E5B55E;
+    background-color: #30414F;
+    border-color: #30414F;
+}
+.space-btn {
+  height: 34px;
+}
+.m0 {
+  margin: 0;
+}
+.widget-farma:hover {
+    box-shadow: 0 0 6px 1px rgba(27, 45, 60, 0.21);
+}
+
+.modal-header {
+  display: block;
+}

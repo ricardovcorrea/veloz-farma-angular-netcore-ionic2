@@ -1,0 +1,399 @@
+<div class="container">
+  <div class="row row-teste">
+    <div class="col-md-12">
+      <h2>Info da Loja</h2>
+    </div>
+    <div class="col-md-2">
+      <p class="text-muted">Nome da Loja:</p>
+    </div>
+    <div class="col-md-10">
+      <p class="font-weight-bold">Drogas pra você</p>
+    </div>
+    <div class="col-md-2">
+      <p class="text-muted">Telefone:</p>
+    </div>
+    <div class="col-md-10">
+      <p class="font-weight-bold">(21) 9 9249-6526</p>
+    </div>
+    <div class="col-md-2">
+      <p class="text-muted">Email:</p>
+    </div>
+    <div class="col-md-10">
+      <p class="font-weight-bold">contato@andersonbarboza.com</p>
+    </div>
+    <div class="col-md-2">
+      <p class="text-muted">Pessoa de contato:</p>
+    </div>
+    <div class="col-md-10">
+      <p class="font-weight-bold">Donald Trump</p>
+    </div>
+
+    <div class="col-md-12">
+
+      <form class="form-inline mvert20">
+
+        <input type="text" class="form-control" placeholder="Latitude">
+
+        <input type="text" class="form-control mlat20" placeholder="Longitude">
+
+        <input type="text" class="form-control" placeholder="Raio de atuação">
+
+      </form>
+      
+      <button type="button" class="btn btn-lgs btn-success">Salvar</button>
+
+    </div>
+
+  </div>
+
+  <div class="row row-teste">
+    <div class="col-12">
+      <h2>Formas de pagamento</h2>
+
+      <form class="mvert20">
+
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Dinheiro</label>
+          <div class="col-sm-10">
+            <div class="btn-group">
+              <label class="btn btn-primary" name="time1" [(ngModel)]="DinheiroRadio" btnRadio="Left">Sim</label>
+              <label class="btn btn-primary" name="time1" [(ngModel)]="DinheiroRadio" btnRadio="Right">Não</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Debito</label>
+          <div class="col-sm-10">
+            <div class="btn-group">
+              <label class="btn btn-primary" name="time1" [(ngModel)]="debitoRadio" btnRadio="Left">Sim</label>
+              <label class="btn btn-primary" name="time1" [(ngModel)]="debitoRadio" btnRadio="Right">Não</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Crédito</label>
+          <div class="col-sm-10">
+            <div class="btn-group">
+              <label class="btn btn-primary" name="time1" [(ngModel)]="creditoRadio" btnRadio="Left">Sim</label>
+              <label class="btn btn-primary" name="time1" [(ngModel)]="creditoRadio" btnRadio="Right">Não</label>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+      <button type="button" class="btn btn-lgs btn-success mvert20">Salvar</button>
+    </div>
+  </div>
+
+  <div class="row row-teste">
+    <div class="col-12">
+      <h2>Valor do Frete</h2>
+
+      <form>
+        <input type="text" class="form-control" placeholder="R$ 10,00">
+      </form>
+
+      <button type="button" class="btn btn-lgs btn-success mvert20">Salvar</button>
+    </div>
+  </div>
+
+  <div class="row row-teste">
+    <div class="col-12">
+      <h2>Dia e Horáriod e atendimento</h2>
+
+      <form>
+
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Segunda-feira</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" name="time1" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" name="time1" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Terça</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" name="time1" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" name="time1" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Quarta-feira</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" name="time1" [(ngModel)]="DinheiroRadio" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" name="time1" [(ngModel)]="DinheiroRadio" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Quinta-feira</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" name="time1" [(ngModel)]="DinheiroRadio" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" name="time1" [(ngModel)]="DinheiroRadio" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Sexta-feira</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" name="time1" [(ngModel)]="DinheiroRadio" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" name="time1" [(ngModel)]="DinheiroRadio" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Sábado</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" name="time1" [(ngModel)]="DinheiroRadio" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" name="time1" [(ngModel)]="DinheiroRadio" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Domingo</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" name="time1" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" name="time1" [(ngModel)]="DinheiroRadio" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" name="time1" [(ngModel)]="DinheiroRadio" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+      <button type="button" class="btn btn-lgs btn-success mvert20">Salvar</button>
+    </div>
+  </div>
+
+  <div class="row row-teste">
+    <div class="col-12">
+      <h2>Usuários</h2>
+      <table class="table table-hover table-bordered table-striped">
+        <thead class="thead-inverse">
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ativo</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Droga Ria</td>
+            <td>Rua dos bobos</td>
+            <td>
+              <div class="btn-group">
+                <label class="btn btn-primary" name="time1" [(ngModel)]="radioModel" btnRadio="Left">On</label>
+                <label class="btn btn-primary" name="time1" [(ngModel)]="radioModel" btnRadio="Right">Off</label>
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">Editar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Droga Ria</td>
+            <td>Rua dos bobos</td>
+            <td>
+              <div class="btn-group">
+                <label class="btn btn-primary" name="time1" [(ngModel)]="radioModel" btnRadio="Left">On</label>
+                <label class="btn btn-primary" name="time1" [(ngModel)]="radioModel" btnRadio="Right">Off</label>
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">Editar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Droga Ria</td>
+            <td>Rua dos bobos</td>
+            <td>
+              <div class="btn-group">
+                <label class="btn btn-primary" name="time1" [(ngModel)]="radioModel" btnRadio="Left">On</label>
+                <label class="btn btn-primary" name="time1" [(ngModel)]="radioModel" btnRadio="Right">Off</label>
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">Editar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Droga Ria</td>
+            <td>Rua dos bobos</td>
+            <td>
+              <div class="btn-group">
+                <label class="btn btn-primary" name="time1" [(ngModel)]="radioModel" btnRadio="Left">On</label>
+                <label class="btn btn-primary" name="time1" [(ngModel)]="radioModel" btnRadio="Right">Off</label>
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">Editar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Droga Ria</td>
+            <td>Rua dos bobos</td>
+            <td>
+              <div class="btn-group">
+                <label class="btn btn-primary" name="time1" [(ngModel)]="radioModel" btnRadio="Left">On</label>
+                <label class="btn btn-primary" name="time1" [(ngModel)]="radioModel" btnRadio="Right">Off</label>
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">Editar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Droga Ria</td>
+            <td>Rua dos bobos</td>
+            <td>
+              <div class="btn-group">
+                <label class="btn btn-primary" name="time1" [(ngModel)]="radioModel" btnRadio="Left">On</label>
+                <label class="btn btn-primary" name="time1" [(ngModel)]="radioModel" btnRadio="Right">Off</label>
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">Editar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-lgs btn-success mvert20">Salvar</button>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Editar Usuário</h4>
+        <button type="button" class="close pull-right" (click)="lgModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>
+                Nome
+              </th>
+              <th>
+                <input type="text" class="form-control">
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Dorflex
+              </td>
+              <td>
+                2
+              </td>
+              <td>
+                <div class="input-group">
+                  <span class="input-group-addon">R$</span>
+                  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Tylenol
+              </td>
+              <td>
+                3
+              </td>
+              <td>
+                <div class="input-group">
+                  <span class="input-group-addon">R$</span>
+                  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="row mb20">
+          <div class="col-md-6">
+            <h4 class="">Pagamento:</h4>
+            <p>Pagamento em Dinheiro</p>
+          </div>
+          <div class="col-md-6">
+            <h4 class="pull-right">Total: R$ 43,76</h4>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-link pull-right">Cancelar</button>
+        <button type="button" class="btn btn-success pull-right">Enviar orçamento</button>
+      </div>
+    </div>
+  </div>
+</div>

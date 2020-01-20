@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="header" mode="ios">
+    <button ion-button class="modal-close-button" icon-only (click)="goBack()">
+      <ion-icon name='md-arrow-back'></ion-icon>
+    </button>
+    <ion-title><img src='assets/images/logo.png' class='header-logo'></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="bg">
+  <address-bar [limitSize]="false">
+  </address-bar>
+  <budget-timer [secsTotalTime]=300 (tickEvent)="onTimerTick()" (finishedEvent)="onTimerFinish()">
+  </budget-timer>
+  <span class="waiting-text">
+        Aguardando o orçamento de <span class="highlight">5 farmácias</span>, proximas a voce.
+  </span>
+
+  <budget-list [budgets]="budgetResponses">
+  </budget-list>
+</ion-content>

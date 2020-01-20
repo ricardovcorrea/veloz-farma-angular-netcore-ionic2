@@ -1,0 +1,49 @@
+page-product-detail {
+  .card-geral-prod {
+    background: #E8EAEF;
+    box-shadow: $sombra;
+    .titulo {
+      font-size: 1.2em;
+      color: $cinza;
+      font-weight: bold;
+    }
+    .categoria {
+      font-size: 0.9em;
+      color: $cinzaClaro;
+      margin-bottom: 1em;
+    }
+  }
+  .d-img-prod {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    img {
+      max-width: 100%;
+      width: auto;
+      max-height: 200px;
+    }
+  }
+  ion-list {
+    border: $border-b-farma;
+    box-shadow: $sombra;
+    margin: 1em 0.7em!important;
+    .item-ios:first-child {
+      border-top: 0!important;
+    }
+    .item {
+      border-bottom: $border-b-farma;
+      font-size: 1.6em;
+      font-weight: bold;
+      color: $azul;
+    }
+      .label {
+        margin: 0.9em .5em 0.9em 0;
+      }
+      .item-inner {
+        border-bottom: 0!important;
+      }
+  }
+}

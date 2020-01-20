@@ -1,0 +1,51 @@
+search-product-list {
+    .list-product {
+        border: 0;
+        box-shadow: 0 0 0 rgba(23, 47, 76, 0);
+        
+        button.card-product {
+        border: 1px solid #d7dadd;
+        box-shadow: $sombra;
+        margin-bottom: 0.5em;
+        
+          .item-inner {
+          border-bottom: none!important;
+          }
+        }
+        button.btn-cart {
+          padding: 0 1em;
+          height: 3.5em;
+          background: $verde;
+          margin-right: 0;
+          border-radius: 50%;
+          
+          ion-icon {
+            font-size: 2em!important;
+          }
+        }
+        .button-ios {
+          margin-right: 10px!important; 
+        }
+        h2 {
+        font-size: 0.9em;
+        font-weight: bold;
+        color: $cinza;
+        height: 2.5em;
+        overflow: hidden!important;
+        margin-top: 0em!important;
+        }
+        p {
+        font-size: 0.8em;
+        color: $amarelo;
+        }
+        ion-avatar img {
+          border-radius: 0!important;
+          width: 54px;
+          height: 54px;
+        }
+      }
+      .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+        background-image: none;
+        padding-right: 0;
+    }
+}

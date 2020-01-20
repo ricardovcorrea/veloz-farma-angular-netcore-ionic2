@@ -1,0 +1,17 @@
+page-find-budget {
+    .waiting-text
+    {
+        display: block;
+        text-align: center;
+        padding: 0 10px 0 10px;
+        color: $azul;
+        font-size: 1.3em;
+        font-weight: 900;
+        margin-bottom: 2em;
+
+        .highlight
+        {
+            color:#F1A63C;
+        }
+    }
+}

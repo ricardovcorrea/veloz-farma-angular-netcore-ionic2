@@ -1,0 +1,39 @@
+page-profile {
+  .item-resumo {
+    background: transparent;
+    p {
+      color: $azul;
+    }
+    .name {
+      font-weight: bold;
+    }
+    .item-inner {
+      border-bottom: 0!important;
+    }
+    ion-icon {
+      font-size: 2.2em;
+    }
+  }
+  .group-menu {
+    margin: 0 1em;
+    border-radius: 0.4em;
+    overflow: hidden;
+    border: $border-b-farma;
+    box-shadow: $sombra;
+    ion-item {
+      border-bottom: 1px solid $border-color;
+    }
+    .item-inner {
+      border-bottom: 0!important;
+      margin-left: 5px!important;
+    }
+    .label {
+      margin: 1.3em 0em;
+      color: #091f51;
+      font-size: 1.2em;
+    }
+    ion-icon {
+      color: $amarelo;
+    }
+  }
+}

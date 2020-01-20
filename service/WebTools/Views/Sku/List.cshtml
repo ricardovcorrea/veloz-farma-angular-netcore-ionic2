@@ -1,0 +1,99 @@
+﻿@model List<IhChegou.DTO.Product.DtoSku>
+
+@{
+    ViewBag.Title = "List";
+    int index = 0;
+}
+@Html.ActionLink("Proxima Pagina", "List", new { Page = ViewBag.Page + 1 })
+<style>
+    input.cbox {
+        height: 100px;
+        width: 100px;
+    }
+</style>
+@using (Html.BeginForm("RemoveImages", "Sku", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <br />
+    <br />
+    <input type="button" onclick="check()" value="Selecionar tudo" />
+    <input type="button" onclick="uncheck()" value="desselecionar tudo" />
+    <table class="table">
+
+        @if (Model != null)
+        {
+            
+            foreach (var item in Model)
+            {
+
+                <tr>
+                    <td>
+                        @item.Id
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        <img src="@item.Image" alt="Imagem" height="75" />
+                    </td>
+                    <td>
+                        @Html.CheckBox($"[{index}].ToDelete", true, new { @class = "cbox" })
+                        @Html.Hidden($"[{index}].Page", (int)ViewBag.Page)
+                        @Html.Hidden($"[{index}].Id", item.Id)
+                        @{
+                            index++;
+                        }
+                    </td>
+                </tr>
+                                }
+                            }
+    </table>
+    <input type="submit" />
+    <br />
+    <br />
+    <input type="button" onclick="check()" value="Selecionar tudo" />
+    <input type="button" onclick="uncheck()" value="desselecionar tudo" />
+    <br />
+    <br />
+    @Html.ActionLink("Proxima Pagina", "List", new { Page = ViewBag.Page + 1 })
+                            }
+
+@section scripts {
+
+    <script>
+
+        function uncheck() {
+
+            $(".cbox").each((i, value) => {
+                console.log(value.value);
+                value.checked = false;
+            });
+
+
+        }
+
+        function check() {
+            $(".cbox").each((i, value) => {
+                console.log(value.value);
+                value.checked = true;
+            });
+
+
+
+        }
+        $(document).ready(function () {
+            uncheck();
+        });
+    </script>
+
+
+
+}
+
+
+
+
+
+
+
+

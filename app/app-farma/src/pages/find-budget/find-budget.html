@@ -1,0 +1,19 @@
+<ion-header class="header-modal">
+  <ion-navbar color="azul">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img src='assets/images/logo.png' class='header-logo'></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg">
+  <budget-timer [secsTotalTime]=300 (tickEvent)="onTimerTick()" (finishedEvent)="onTimerFinish()">
+  </budget-timer>
+  <span class="waiting-text">
+        Aguardando o orçamento de<br /> <span class="highlight">5 farmácias</span>, próximas a você.
+  </span>
+
+  <budget-list [budgets]="budgetResponses">
+  </budget-list>
+</ion-content>

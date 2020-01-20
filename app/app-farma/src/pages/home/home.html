@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="azul">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img src='assets/images/logo.png' class='header-logo' (click)="clearSession()"></ion-title>
+    <ion-buttons end>
+      <cart-button></cart-button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar>
+    <address-bar></address-bar>
+    <div class="home-search-bar-body">
+      <div class="searchBox" (click)="openSearch()">
+        <ion-icon name="search" class="icon"></ion-icon>
+        <span class="placeholderText">Buscar</span>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg">
+  <div class="div-margin">
+    <search-product-list [Products]="searchResult.Result" [IsLoading]="searchIsLoading"></search-product-list>
+  </div>
+</ion-content>

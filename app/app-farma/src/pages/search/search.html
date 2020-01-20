@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar color="azul">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img src='assets/images/logo.png' class='header-logo'></ion-title>
+    <ion-buttons class="cart-header" end>
+        <cart-button></cart-button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-searchbar [(ngModel)]="searchQuery.Query" #searchInput (ionInput)="handleSearchInputChange($event)"></ion-searchbar>
+</ion-header>
+
+<ion-content padding>
+  <search-product-list [Products]="searchResult.Result" [IsLoading]="searchIsLoading"></search-product-list>
+</ion-content>

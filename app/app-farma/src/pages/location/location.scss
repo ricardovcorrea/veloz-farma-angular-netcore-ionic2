@@ -1,0 +1,83 @@
+page-location ion-list {
+    margin: 6% 3% 0 3%!important;
+    border: 1px solid #d7dadd;
+  border-radius: 0.6em;
+  box-shadow: $sombra;
+}
+page-location ion-list .header-list-loc {
+  height: 23vh;
+  background-image: url('../assets/images/location-header.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+page-location .header-list-loc .title {
+   font-size: 1.7em;
+  font-weight: 700;
+  color: white;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+page-location ion-item {
+    padding-left: 0!important;
+}
+page-location ion-item:last-child {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+page-location ion-item:first-child {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.option ion-label {
+      margin: 20px 8px 20px 0;
+}
+
+page-location ion-item .icon {
+  padding-right: 0.5em;
+  color: $amarelo;
+}
+
+page-location ion-item .text {
+color: $azul;
+}
+
+page-location ion-item .item-inner {
+    border-bottom: 1px solid #d7dadd!important;
+  padding-left: 1em;
+}
+
+page-location .ends .item-inner {
+  padding-left: 0;
+    margin-left: 0!important;
+}
+page-location .ends {
+ padding-left: 0.7em;
+ color: $azul;  
+}
+page-location .ends .icon {
+      padding-left: 0em;
+    margin-right: 0.4em;
+  color: $amarelo;
+}
+
+
+page-location .header-list-loc .item-inner {
+      border-bottom: none!important;
+}
+
+.list-md > .item-block:last-child ion-label, .list-md > .item-block:last-child .item-inner, .list-md > .item-wrapper:last-child ion-label, .list-md > .item-wrapper:last-child .item-inner {
+    border-radius: 0.5em;
+}
+
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: 0!important;
+}
+
+
+

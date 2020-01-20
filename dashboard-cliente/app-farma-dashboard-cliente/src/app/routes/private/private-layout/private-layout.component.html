@@ -1,0 +1,55 @@
+<nav class="navbar navbar-inverse fixed-top bg-azul-farma">
+  <a class="" href="#">
+    <img src="http://via.placeholder.com/120x30">
+  </a>
+
+  <button class="btn btn-primary" type="button" [routerLink]="['/public/home']">Home</button>
+  <button class="btn btn-primary" type="button" [routerLink]="['/private/dashboard']">Dashboard</button>
+<button class="btn btn-primary" type="button" [routerLink]="['/private/store/config']">config</button>
+<button class="btn btn-primary" type="button" (click)="logout()">LOGOUT</button>
+  
+  <div class="btn-group pull-right" dropdown>
+  <button type="button" class="btn btn-danger">Farmacia Atual</button>
+  <button type="button" dropdownToggle class="btn btn-danger dropdown-toggle dropdown-toggle-split">
+  </button>
+  <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+    <li role="menuitem"><a class="dropdown-item" href="#">Farmacia 2</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Farmacia 3</a>
+    </li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Farmacia 4</a></li>
+    <li class="divider dropdown-divider"></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Adicionar Nova Farmacia</a>
+    </li>
+  </ul>
+</div>
+
+</nav>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-2 col-md-2 hidden-xs-down sidebar">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Analytics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Export</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="col-sm-10 col-md-10 pt-3 bg-light-farma">
+
+      <router-outlet></router-outlet>
+
+    </main>
+
+  </div>
+</div>

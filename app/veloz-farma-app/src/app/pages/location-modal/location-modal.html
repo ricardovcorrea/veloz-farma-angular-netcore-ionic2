@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="header" mode="ios">
+    <button ion-button class="modal-close-button" icon-only (click)="closeModal()">
+      <ion-icon name='close'></ion-icon>
+    </button>
+    <ion-title><img src='assets/images/logo.png' class='header-logo'></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <address-bar [limitSize]="false">
+    </address-bar>
+
+  <div class="location-option-list-body">
+    <div class="box-location">
+      <div class="option-list-header">
+        <span class="title">Onde voce esta?</span>
+      </div>
+      <div class="subtitle">Buscaremos os melhores precos perto de voce, para isso precisamos da sua localizçao!</div>
+      <div class="option location" (click)="useMyLocation()">
+        <ion-icon name="pin" class="icon"></ion-icon>
+        <span class="text">Usar minha localizaçao</span>
+      </div>
+      <div class="option address" (click)="insertAddress()">
+        <ion-icon name="create" class="icon"></ion-icon>
+        <span class="text">Inserir endereço</span>
+      </div>
+      <div class="option login" (click)="chooseLogin()">
+        <ion-icon name="person" class="icon"></ion-icon>
+        <span class="text">Fazer login</span>
+      </div>
+    </div>
+  </div>
+</ion-content>

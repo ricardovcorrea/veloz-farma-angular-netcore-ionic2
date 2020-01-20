@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="header" mode="ios">
+    <button ion-button class="modal-close-button" icon-only (click)="back()">
+      <ion-icon name='close'></ion-icon>
+    </button>
+    <ion-title><img src='assets/images/logo.png' class='header-logo'></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <address-bar>
+  </address-bar>
+  <order-product-list [products]="atualOrder.SkusRequesteds">
+  </order-product-list>
+  <button ion-button full class="add-more-button" (click)="goToHomePage()">ADICIONAR MAIS ITENS</button>
+</ion-content>
+<ion-footer *ngIf="atualOrder.SkusRequesteds && atualOrder.SkusRequesteds.length > 0" class='footer-button'>
+  <ion-toolbar color='header' class="footer-button verde" (click)="findBudgets()">
+    <span class="footer-button-text">PEDIR ORÇAMENTOS</span>
+    <ion-icon name='arrow-forward' class="footer-button-icon"></ion-icon>
+  </ion-toolbar>
+</ion-footer>

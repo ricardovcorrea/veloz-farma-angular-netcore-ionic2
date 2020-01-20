@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="header" mode="ios">
+    <ion-title><img src='assets/images/logo.png' class='header-logo'></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="bg">
+  <!--<address-bar>
+  </address-bar>-->
+
+  <!--<ion-card class="product-list-item mar-t1 titulo">
+    <ion-item class="product-content">
+      <ion-icon item-left ios="ios-globe-outline" md="md-globe"></ion-icon>
+      <h2 class="name">Pagamento online</h2>
+    </ion-item>
+  </ion-card>
+  <ion-card class="product-list-item">
+    <ion-item class="product-content">
+      <ion-icon item-left ios="ios-card-outline" md="md-card"></ion-icon>
+      <h2 class="name">Cartão de crédito</h2>
+    </ion-item>
+  </ion-card>
+  <ion-card class="product-list-item last">
+    <ion-item class="product-content">
+      <ion-icon name="cart" item-left></ion-icon>
+      <h2 class="name">Paypal</h2>
+    </ion-item>
+  </ion-card>-->
+
+  <ion-card class="product-list-item mar-t1 titulo">
+    <ion-item class="product-content">
+      <ion-icon name="cart" item-left></ion-icon>
+      <h2 class="name">Pagamento na Entrega</h2>
+    </ion-item>
+  </ion-card>
+  <ion-card class="product-list-item last">
+    <ion-item class="product-content">
+      <ion-icon item-left ios="ios-card-outline" md="md-card"></ion-icon>
+      <ion-label class="name">Forma de pagamento</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="dinheiro">Dinheiro</ion-option>
+        <ion-option value="visa-cred">Visa Crédito</ion-option>
+        <ion-option value="visa-deb">Visa Débito</ion-option>
+        <ion-option value="credcard-cred">Creditcard Crédito</ion-option>
+        <ion-option value="credcard-deb">Creditcard Débito</ion-option>
+        <ion-option value="american-express">American express</ion-option>
+        <ion-option value="elo">Elo</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+</ion-content>
+
+
+<ion-footer class='footer-button'>
+  <ion-toolbar color='header' class="footer-button verde" (click)="findBudgets()">
+    <span class="footer-button-text">Finalizar pedido</span>
+    <ion-icon name='arrow-forward' class="footer-button-icon"></ion-icon>
+  </ion-toolbar>
+</ion-footer>

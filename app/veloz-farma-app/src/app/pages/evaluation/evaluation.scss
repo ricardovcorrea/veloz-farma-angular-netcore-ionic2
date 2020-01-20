@@ -1,0 +1,42 @@
+page-evaluation .header-pedido-final {
+  background: $amarelo;
+  padding: 0.3em 0 0.3em 0.8em;
+}
+
+page-evaluation .header-pedido-final .p-header {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+page-evaluation ion-card {
+  border-top-left-radius: .8em!important;
+  border-top-right-radius: .8em!important;
+}
+
+page-evaluation .header-pedido-final img {
+  width: 40px;
+}
+
+page-evaluation ion-item .azul {
+  color: $azul;
+}
+
+page-evaluation .center {
+  text-align: center;
+  color: $amarelo;
+  border-top: 1px solid #d5d9db;
+}
+
+page-evaluation .center ion-icon {
+  margin-right: 10px;
+}
+
+.margin-lat {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mtb1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

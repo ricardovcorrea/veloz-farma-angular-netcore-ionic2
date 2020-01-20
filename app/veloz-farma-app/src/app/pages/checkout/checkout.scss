@@ -1,0 +1,72 @@
+page-checkout .list-checkout {
+  padding-top: 2em;
+}
+
+page-checkout .product-list-item {
+  height: 50px;
+  margin-bottom: 0px;
+  border-radius: 0;
+  border-bottom: 1px solid #d7dadd;
+}
+
+page-checkout .endereco {
+  height: 55px;
+}
+
+page-checkout .titulo {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #eaecee;
+  border-bottom: 0;
+}
+
+page-checkout .titulo .product-content {
+  background: #eaecee;
+}
+
+page-checkout .last {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+page-checkout .product-content h2 {
+  color: $cinza;
+}
+
+page-checkout .product-content h2 {
+  color: $cinza;
+}
+
+page-checkout .titulo h2,
+page-checkout .product-content h3,
+page-checkout .titulo .icon {
+  color: #686868;
+}
+
+page-checkout .product-content h3 {
+  font-size: 0.8em;
+}
+
+page-checkout .changeAddressButton {
+  background: transparent;
+  color: $amarelo;
+  text-transform: uppercase;
+  position: absolute;
+  top: 1.2em;
+  right: 0em;
+  height: 28px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  margin-right: 0!important;
+  margin-top: 0!important;
+}
+
+page-checkout .mar-t1 {
+  margin-top: 1em;
+}
+
+page-checkout .item-md ion-icon[item-left] + .item-inner {
+  margin-left: 10px;
+}

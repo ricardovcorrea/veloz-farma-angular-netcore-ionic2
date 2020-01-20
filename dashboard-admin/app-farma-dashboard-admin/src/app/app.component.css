@@ -1,0 +1,50 @@
+.bg-azul-farma {
+  background: #091f51;
+}
+.bg-azul-farma-light {
+  background: #193169;
+}
+.bg-light-farma {
+  background: #f9f9fb;
+}
+.color-azul-farma {
+  color: #091f51;
+}
+
+.bg-amarelo-farma {
+  background: #e0a53b;
+}
+.color-amarelo-farma {
+  color: #e0a53b;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+      padding: .5rem 1rem;
+}
+.sidebar {
+  border-right: 1px solid #d7dadd;
+      height: calc(100vh - 52px);
+}
+main {
+  height: calc(100vh - 52px);
+  overflow: scroll;
+}
+
+.card-farma {
+      margin-bottom: 1.35rem;
+      border: 1px solid #d7dadd;
+      position: relative;
+      background-color: #fff;
+    border-radius: .25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+

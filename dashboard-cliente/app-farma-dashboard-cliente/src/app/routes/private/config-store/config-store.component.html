@@ -1,0 +1,295 @@
+<div class="container">
+  <div class="row row-teste">
+    <div class="col-12">
+      <h2>Info da Loja</h2>
+
+      <form class="form-inline">
+
+        <input type="text" class="form-control" placeholder="Latitude">
+
+        <input type="text" class="form-control mlat20" placeholder="Longitude">
+
+        <input type="text" class="form-control" placeholder="Raio de atuação">
+
+      </form>
+
+   <button type="button" class="btn btn-lgs btn-success mvert20">Salvar</button>
+    </div>
+  </div>
+
+  <div class="row row-teste">
+    <div class="col-12">
+      <h2>Formas de pagamento</h2>
+
+      <form>
+
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Dinheiro</label>
+          <div class="col-sm-10">
+            <div class="btn-group">
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Left">Sim</label>
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Right">Não</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Debito</label>
+          <div class="col-sm-10">
+            <div class="btn-group">
+              <label class="btn btn-primary" [(ngModel)]="debitoRadio" btnRadio="Left">Sim</label>
+              <label class="btn btn-primary" [(ngModel)]="debitoRadio" btnRadio="Right">Não</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Crédito</label>
+          <div class="col-sm-10">
+            <div class="btn-group">
+              <label class="btn btn-primary" [(ngModel)]="creditoRadio" btnRadio="Left">Sim</label>
+              <label class="btn btn-primary" [(ngModel)]="creditoRadio" btnRadio="Right">Não</label>
+            </div>
+          </div>
+        </div>
+
+      </form>
+      
+      <button type="button" class="btn btn-lgs btn-success mvert20">Salvar</button>
+    </div>
+  </div>
+
+  <div class="row row-teste">
+    <div class="col-12">
+      <h2>Valor do Frete</h2>
+
+      <form>
+        <input type="text" class="form-control" placeholder="R$ 10,00">
+      </form>
+      
+      <button type="button" class="btn btn-lgs btn-success mvert20">Salvar</button>
+    </div>
+  </div>
+
+  <div class="row row-teste">
+    <div class="col-12">
+      <h2>Dia e Horáriod e atendimento</h2>
+
+      <form>
+
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Segunda-feira</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Terça</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Quarta-feira</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Quinta-feira</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Sexta-feira</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Sábado</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label label-dias">Domingo</label>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+          <div class="col-sm-3">
+            <timepicker [(ngModel)]="mytime" [showMeridian]="ismeridian"></timepicker>
+          </div>
+
+          <div class="col-sm-3 center-vertical">
+            <div class="btn-group">
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Left">Aberto</label>
+              <label class="btn btn-primary" [(ngModel)]="DinheiroRadio" btnRadio="Right">Fechado</label>
+            </div>
+          </div>
+        </div>
+
+      </form>
+      
+      <button type="button" class="btn btn-lgs btn-success mvert20">Salvar</button>
+    </div>
+  </div>
+
+  <div class="row row-teste">
+    <div class="col-12">
+      <h2>Usuários</h2>
+      <table class="table table-hover table-bordered table-striped">
+        <thead class="thead-inverse">
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ativo</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Droga Ria</td>
+            <td>Rua dos bobos</td>
+            <td>
+              <div class="btn-group">
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Left">On</label>
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Right">Off</label>
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">Editar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Droga Ria</td>
+            <td>Rua dos bobos</td>
+            <td>
+              <div class="btn-group">
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Left">On</label>
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Right">Off</label>
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">Editar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Droga Ria</td>
+            <td>Rua dos bobos</td>
+            <td>
+              <div class="btn-group">
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Left">On</label>
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Right">Off</label>
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">Editar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Droga Ria</td>
+            <td>Rua dos bobos</td>
+            <td>
+              <div class="btn-group">
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Left">On</label>
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Right">Off</label>
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">Editar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Droga Ria</td>
+            <td>Rua dos bobos</td>
+            <td>
+              <div class="btn-group">
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Left">On</label>
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Right">Off</label>
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">Editar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Droga Ria</td>
+            <td>Rua dos bobos</td>
+            <td>
+              <div class="btn-group">
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Left">On</label>
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Right">Off</label>
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">Editar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<button type="button" class="btn btn-lgs btn-success mvert20">Salvar</button>
+
+    </div>
+  </div>
+</div>

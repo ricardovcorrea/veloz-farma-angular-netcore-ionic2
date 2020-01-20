@@ -1,0 +1,8 @@
+{
+  "name": "farmacia",
+  "app_id": "678fe534",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

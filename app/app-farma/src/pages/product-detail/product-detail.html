@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="azul">
+    <ion-title>
+      <img src='assets/images/logo.png' class='header-logo'>
+    </ion-title>
+  </ion-navbar >
+</ion-header>
+
+ <ion-content class="bg">
+  <ion-card class="card-geral-prod">
+<div class="d-img-prod">
+    <img src="https://images.consultaremedios.com.br/186x186/7896212409457"/>
+</div>
+     <ion-card-content>
+      <ion-card-title class="titulo">
+        Tylenol 200mg, solução oral, frasco gotejador, com 15ml
+      </ion-card-title>
+      <p class="categoria">
+        Dor, Febre e Contusão | Analgésico e Antitérmico
+      </p>
+     <button ion-button block icon-left class="btn-farma"><ion-icon name="cart"></ion-icon> Adicionar ao Carrinho</button>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-list>
+  <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+    {{ item }}
+  </button>  
+</ion-list>
+</ion-content>

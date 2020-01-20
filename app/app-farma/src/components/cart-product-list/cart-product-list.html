@@ -1,0 +1,19 @@
+<ion-spinner [hidden]="!IsLoading"></ion-spinner>
+<ion-list class="list-cart">
+  <ion-item class="card-product" *ngFor="let sku of Skus">
+    <ion-avatar item-start>
+      <img src="{{sku.Image ? sku.Image : 'assets/images/place-imagem.jpg'}}">
+    </ion-avatar>
+    <h2 text-wrap>{{sku.Name}}</h2>
+    <p>A partir de: R$ 5,99</p>
+    <div class="qnt-cart" item-end>
+      <button class="btn-cart" ion-button (click)="increaseQuantity(sku)">
+        <ion-icon name="md-add"></ion-icon>
+      </button>
+      <span class="valor-qnt">{{sku.Quantity}}</span>
+      <button class="btn-cart" ion-button (click)="decreaseQuantity(sku)">
+        <ion-icon name="md-remove"></ion-icon>
+      </button>
+    </div>
+  </ion-item>
+</ion-list>

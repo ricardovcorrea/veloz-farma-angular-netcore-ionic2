@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar color="header">
+    <ion-title class="color-amarelo">
+      Complete seu endereço
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="closeModal()">
+        <ion-icon name="md-close" showWhen="ios,android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg">
+  <ion-list class="pad-lat30 form-address">
+
+    <ion-item>
+      <ion-label floating>CEP</ion-label>
+      <ion-input type="text" (input)="handleCepChanges($event.target.value)" [(ngModel)]=address.PostalCode></ion-input>
+    </ion-item>
+
+
+    <div text-center>
+      <button ion-button clear class="no-cep" (click)="dontKnowMyCEP = !dontKnowMyCEP">{{dontKnowMyCEP ? "Sei meu CEP": "Não sei meu CEP"}}</button>
+    </div>
+    <div [hidden]="address?.PostalCode?.length < 8 && !dontKnowMyCEP">
+      <ion-item>
+      <ion-label floating>Endereço</ion-label>
+      <ion-input type="text" [(ngModel)]=address.Street></ion-input>
+      </ion-item>
+
+      <ion-row>
+      <ion-col col-4 class="pad0">
+        <ion-item>
+          <ion-label floating>Número</ion-label>
+          <ion-input type="number" [(ngModel)]=address.Number></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-8 class="pad0 pad-l1">
+        <ion-item>
+          <ion-label floating>Complemento</ion-label>
+          <ion-input type="text" [(ngModel)]=address.Complement></ion-input>
+        </ion-item>
+      </ion-col>
+      </ion-row>
+
+      <ion-item>
+      <ion-label floating>Bairro</ion-label>
+      <ion-input type="text" [(ngModel)]=address.Neighborhood></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-label floating>Cidade</ion-label>
+      <ion-input type="text" [(ngModel)]=address.City></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-label floating>Estado</ion-label>
+      <ion-input type="text" [(ngModel)]=address.State></ion-input>
+      </ion-item>
+
+      <ion-item class="last-item">
+      <ion-label floating>Referência</ion-label>
+      <ion-input type="text" [(ngModel)]=address.Reference></ion-input>
+      </ion-item>
+    </div>
+  
+  </ion-list>
+</ion-content>
+
+<ion-footer class='footer-button'>
+  <ion-toolbar color='header' class="footer-button verde" (click)=confirmAddress()>
+    <span class="footer-button-text">Completar Endereço</span>
+    <ion-icon name='arrow-forward' class="footer-button-icon"></ion-icon>
+  </ion-toolbar>
+</ion-footer>
